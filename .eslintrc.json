@@ -1,19 +1,22 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "airbnb"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 13,
-        "sourceType": "module"
-    },
-    "rules": {
-    },
-    "overrides": [{
-        "files":["**/*.test.js"],
-        "env": {"jest": true}
-    }]
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "env": { "jest": true }
+    }
+  ]
 }
