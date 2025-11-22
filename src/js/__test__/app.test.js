@@ -1,4 +1,4 @@
-import Team from '../app';
+import Team from '../app.js';
 
 test('Add char first time', () => {
   const team = new Team();
