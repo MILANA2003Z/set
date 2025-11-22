@@ -1,4 +1,4 @@
-export default class Team {
+export class Team {
   constructor() {
     this.members = new Set();
   }
@@ -11,12 +11,14 @@ export default class Team {
   }
 
   addAll(...names) {
-    names.forEach((item) => {
+    for (const item of names) {
       this.add(item);
-    });
+    }
   }
 
   toArray() {
     return Array.from(this.members);
   }
 }
+
+export default Team;
